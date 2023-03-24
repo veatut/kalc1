@@ -1,0 +1,46 @@
+﻿<Window x:Name="window1" x:Class="kalc1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kalc1"
+        mc:Ignorable="d"
+        Title="ermakov kalkylator v3" Height="410" Width="280">
+    <Grid>
+        <Button Content="1" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_1"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="10,131,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_4"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="10,186,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_7"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="65,76,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_2"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="120,76,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_3"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="65,131,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_5"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="120,131,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_6"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="65,186,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_8"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="120,186,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_9"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="120,241,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_ravno"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="65,241,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_0"/>
+        <Button Content="C" HorizontalAlignment="Left" Margin="10,241,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_delete"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="175,76,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_action"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="175,131,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_action"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="175,186,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_action"/>
+        <Button Content="//" HorizontalAlignment="Left" Margin="175,241,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_action"/>
+        <TextBox x:Name="t1" MaxLength = "3" HorizontalAlignment="Left" Height="59" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="215" FontSize="38" TextAlignment="Right" IsHitTestVisible="False" IsEnabled="False"/>
+        <Button Content="C-" HorizontalAlignment="Left" Margin="10,296,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_ydalit_1digit"/>
+        <Button Content="(" HorizontalAlignment="Left" Margin="65,296,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_skobka1"/>
+        <Button Content=")" HorizontalAlignment="Left" Margin="120,296,0,0" VerticalAlignment="Top" Width="50" Height="50" Click="click_skobka2"/>
+        <GroupBox Padding="5" Margin="170,0,0,5" BorderThickness="0" HorizontalAlignment="Left" Width="195" Height="78" VerticalAlignment="Bottom">
+            <GroupBox.Header>
+                <TextBlock >История</TextBlock>
+            </GroupBox.Header>
+            <StackPanel Margin="0,0,-12,0">
+                <RadioButton Margin="3,3,134,3" Checked="RadioButton_Checked" Content="Вкл"/>
+                <RadioButton Margin="3,3,134,3" Checked="checked1" Content="Выкл"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="t2" HorizontalAlignment="Left" Content="" Height="59" Margin="245,10,-188,0" VerticalAlignment="Top" Width="215" FontSize="20" Visibility="Hidden" Click="mem2" />
+        <Button x:Name="t3" HorizontalAlignment="Left" Content="" Height="59" Margin="245,74,-188,0" VerticalAlignment="Top" Width="215" FontSize="20" Visibility="Hidden" Click="mem2" />
+        <Button x:Name="t4" HorizontalAlignment="Left" Content="" Height="59" Margin="245,138,0,0" VerticalAlignment="Top" Width="215" FontSize="20" Visibility="Hidden" Click="mem2" />
+        <Button x:Name="t5" HorizontalAlignment="Left" Content="" Height="59" Margin="245,202,0,0" VerticalAlignment="Top" Width="215" FontSize="20" Visibility="Hidden" Click="mem2" />
+        <Button x:Name="t6" HorizontalAlignment="Left" Content="" Height="59" Margin="245,266,0,0" VerticalAlignment="Top" Width="215" FontSize="20" Visibility="Hidden" Click="mem2" />
+
+    </Grid>
+</Window>
